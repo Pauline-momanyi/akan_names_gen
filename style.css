@@ -16,7 +16,7 @@ body{
     opacity: 0.3;
     left: 0;
     top: 0;
-    right: 0;
+    width: 60%;
 }
 .header{
     width: 80%;

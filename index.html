@@ -18,17 +18,17 @@
             <P>This Application will generate your Akan name by finding the dayof the week you were born and return the equivalent Akan name.</P>
        </div>
        <div>
-           <form action="#">
+           <form name="myForm" class="formIn" onsubmit="">
             <div class="form-group">
                 <label for="year">Year of Birth</label>
-                <input type="text" name="year" placeholder="Enter year of Birth" class="form-control">
+                <input type="text" name="year" id="year" placeholder="Enter year of Birth" class="form-control">
             </div>
             <div class="form-group">
                 <label for="month">Year of Birth</label>
-                <input type="text" name="month" placeholder="Enter year of Birth" class="form-control">
+                <input type="text" name="month" id="month" placeholder="Enter year of Birth" class="form-control">
             </div>
             <div class="form-group">
-                <label for="date">Year of Birth</label>
+                <label for="date">Month of Birth</label>
                 <input type="text" name="date" placeholder="Enter year of Birth" class="form-control">
             </div>
             <div class="form-group">
@@ -40,8 +40,12 @@
                     <label><input type="radio" name="gender">Female</label>
                 </div>
             </div>
+            <div class="formgroup">
+                <button type="submit">Generate Name</button>
+            </div>
            </form>
        </div>
-   </div> 
+   </div>
+   <script src="script.js"></script> 
 </body>
 </html>
