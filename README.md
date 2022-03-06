@@ -2,7 +2,7 @@
 This web application will be used to generate Akan names. These names originate from the Ghana culture wereby naming is done depending on the day of birth and the gender.
 As a user, one will be required to enter the year, month and date of birth through a form and click the submit button. The business logic of the application will calculate the day of birth from the given information and match it with the correct name as assigned. An alert of the Akan name will then be displayed.
 
-###Link to live site 
+### Link to live site 
 https://pauline-momanyi.github.io/akan_names_gen/
 ## Technologies used
 <ul>
