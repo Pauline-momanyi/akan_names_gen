@@ -3,6 +3,17 @@ var femaleNames=["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 var dayNames = ["Sunday","Monday","Tuesday","Wednesday", "Thursday", "Friday","Saturday" ];
 var birthDay;
 
+function fillAll(){
+    var year = document.forms["Form"]["year"].value;
+    var month = document.forms["Form"]["month"].value;
+    var date = document.forms["Form"]["date"].value;
+    var gender = document.forms["Form"]["gender"].value;
+    if (year == null || year == "", month == null || month == "", date == null || date == "", gender == null || gender == "")
+      {alert("Kindly fill all fields");
+      return false;
+    }
+}
+
 function getDay(){
     let fullYear = document.getElementById('year').value;
     let CC = parseInt(fullYear.toString().substring(0,2));
