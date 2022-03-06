@@ -10,42 +10,44 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-   <div class="container">
-    <img src="ghanabg.png" alt="ghanabg" class="bgimage">
-       <div class="header">
+    <div class="container">
+        <img src="ghanabg.png" alt="ghanabg" class="bgimage">
+        <div class="header">
             
             <h3>AKAN NAMES GENERATOR</h3>
             <P>This Application will generate your Akan name by finding the dayof the week you were born and return the equivalent Akan name.</P>
-       </div>
-       <div>
+        </div>
+        <div>
            <form name="myForm" class="formIn">
             <div class="form-group">
                 <label for="year">Year of Birth</label>
-                <input type="text" name="year" id="year" placeholder="Enter year of Birth" class="form-control">
+                <input type="number" name="year" id="year" placeholder="Enter year of Birth" class="form-control" min="1900" max="2022" value="1990">
             </div>
             <div class="form-group">
                 <label for="month">Month</label>
-                <input type="text" name="month" id="month" placeholder="Enter month of Birth" class="form-control">
+                <input type="number" name="month" id="month" placeholder="Enter month of Birth" class="form-control" min="1" max="12">
             </div>
             <div class="form-group">
                 <label for="date">Date</label>
-                <input type="text" name="date" id="date" placeholder="Enter date of Birth" class="form-control">
+                <input type="number" name="date" id="date" placeholder="Enter date of Birth" class="form-control" min="1" max="31">
             </div>
             <div class="form-group">
-                Gender:             
-                <div class="radio">
-                    <label><input type="radio" name="gender" id="gender">Male</label>
-                </div>
-                <div class="radio">
-                    <label><input type="radio" name="gender" id="gender">Female</label>
+                <label for="">Gender</label><br>
+                <div class="form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="gender" id="male">Male 
+                  </label>
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="gender" id="female">Female 
+                  </label>
                 </div>
             </div>
             <div class="formgroup">
                 <button type="submit" onclick="findName()">Generate Name</button>
             </div>
            </form>
-       </div>
-   </div>
-   <script src="script.js"></script> 
+        </div>
+    </div>
+    <script src="script.js"></script> 
 </body>
 </html>
