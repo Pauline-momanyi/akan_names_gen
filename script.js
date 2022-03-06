@@ -4,10 +4,10 @@ var dayNames = ["Sunday","Monday","Tuesday","Wednesday", "Thursday", "Friday","S
 var birthDay;
 
 function fillAll(){
-    var year = document.forms["Form"]["year"].value;
-    var month = document.forms["Form"]["month"].value;
-    var date = document.forms["Form"]["date"].value;
-    var gender = document.forms["Form"]["gender"].value;
+    var year = document.forms["myForm"]["year"].value;
+    var month = document.forms["myForm"]["month"].value;
+    var date = document.forms["myForm"]["date"].value;
+    var gender = document.forms["myForm"]["gender"].value;
     if (year == null || year == "", month == null || month == "", date == null || date == "", gender == null || gender == "")
       {alert("Kindly fill all fields");
       return false;
