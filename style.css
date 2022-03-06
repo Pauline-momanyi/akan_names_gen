@@ -1,14 +1,22 @@
 body{
-    background-color: white;
-    width: 80%
+    background-color: rgb(219, 191, 191);
+    width: 80%;
+    
     
 }
 .container{
-    height: ;
-    width: ;
+    width: 60%;
     margin: auto;
-    background-color:;
+    /* background-color: black; */
     
+}
+.container img{
+    position: absolute;
+    z-index: -1;
+    opacity: 0.3;
+    left: 0;
+    top: 0;
+    right: 0;
 }
 .header{
     width: 80%;
@@ -16,10 +24,8 @@ body{
     background-color: #ffffff;
     border: 1px solid snow ;
 }
-.bgimage{
-    position: absolute;
-    z-index: -1;
-    opacity: 0.3;
-    left: 0;
-    top: 0;
+
+form{
+    width: 50%;
+    margin: auto;
 }
