@@ -1,12 +1,17 @@
 var maleNames=["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 var FemaleNames=["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
-var dayNames = ["Sunday","Monday","Tuesday","Wednesday", "Thursday", "Friday","Saturday" ];
-function getName(){
-    let fullyear = parseInt(document.getElementById('year').value);
-    let month = parseInt(document.getElementById('month').value);
-    let day = parseInt(document.getElementById('day').value);
-    let gender = document.getElementById('gender').value;
-}
+var dayNames = ["Sunday","Monday","Tuesday","Wednesday", "Thursday", "Friday","Saturday" ];}
+
+function getDay(){
+    let fullYear = parseInt(document.getElementById('year').value);
+    let CC = fullYear.substring(0,2);
+    let YY = fullYear.substring(2,4);
+    let MM = parseInt(document.getElementById("month").value);
+    let DD = parseInt(document.getElementById("date").value);
+    let d = ( ( (CC/4) -2*CC-1) + ( (5*YY/4) ) + ((26*(MM+1)/10) ) + DD)%7;
+    console.log(d);
+    return (Math.round(d));
+  }
 
 
 
@@ -68,6 +73,10 @@ function getGender(){
         }
       break
       default:
-            
-    }
+          
   }
+}
+function findName(){
+  dayValue = calculateDayValue();
+  getGender();
+}
