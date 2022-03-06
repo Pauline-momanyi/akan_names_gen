@@ -1,17 +1,25 @@
 body{
-    background-color: black;
+    background-color: white;
+    width: 80%
+    
 }
 .container{
-    
-    height: 90vh;
-    width: 80vw;
+    height: ;
+    width: ;
     margin: auto;
+    background-color:;
+    
 }
 .header{
-
+    width: 80%;
+    height: 30%;
+    background-color: #ffffff;
+    border: 1px solid snow ;
 }
-img{
+.bgimage{
     position: absolute;
     z-index: -1;
-    opacity: 0.1;
+    opacity: 0.3;
+    left: 0;
+    top: 0;
 }
