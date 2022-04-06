@@ -11,7 +11,7 @@ As a user, one will be required to enter the year, month and date of birth throu
 
 # SetUp
 To use the live setup, click the live link :
-In order to get a copy of the files locally, open the terminal and clone using the command "git clone "
+In order to get a copy of the files locally, open the terminal and clone using the command "git clone https://github.com/Pauline-momanyi/akan_names_gen.git"
 Access the index.html as the main file, style.css for styling and script.js for programming functionality. Run the html file through any browser.
 ## Copyright and License
 The project is distributed under MIT licence for copyright preservation. The project is open source and can be acquired and used freely.

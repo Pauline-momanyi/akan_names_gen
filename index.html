@@ -20,32 +20,33 @@
         </div>
         <div>
             <h4>Fill in the Details Below</h4>
-           <form name="myForm" class="formIn" onsubmit="fillAll()">
+           <form name="myForm" class="formIn">
             <div class="form-group">
                 <label for="year">Year of Birth</label>
-                <input type="number" name="year" id="year" placeholder="Enter year of Birth" class="form-control" min="1900" max="2022" value="1991">
+                <input type="number" name="year" id="year" placeholder="Enter year of Birth" class="form-control" min="1900" max="2022" value="">
             </div>
             <div class="form-group">
                 <label for="month">Month</label>
-                <input type="number" name="month" id="month" placeholder="Enter month of Birth" class="form-control" min="1" max="12">
+                <input type="number" name="month" id="month" placeholder="Enter month of Birth" class="form-control" min="1" max="12" value="">
             </div>
             <div class="form-group">
                 <label for="date">Date</label>
-                <input type="number" name="date" id="date" placeholder="Enter date of Birth" class="form-control" min="1" max="31">
+                <input type="number" name="date" id="date" placeholder="Enter date of Birth" class="form-control" min="1" max="31" value="">
             </div>
             <div class="form-group">
                 <label for="">Gender</label><br>
                 <div class="form-check-inline">
-                  <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="gender" id="male">Male 
-                  </label>
-                  <label class="form-check-label">
-                    <input type="radio" class="form-check-input" name="gender" id="female">Female 
-                  </label>
+                  <label class="form-check-label">Male 
+                </label>
+                    <input type="radio" class="form-check-input" name="gender" id="male">
+                <div class="form-check-inline">
+                  <label class="form-check-label">Female 
+                </label>
+                    <input type="radio" class="form-check-input" name="gender" id="female">
                 </div>
             </div>
             <div class="formgroup">
-                <button type="submit" onclick="findName()">Generate Name</button>
+                <button type="submit">Generate Name</button>
             </div>
            </form>
         </div>
